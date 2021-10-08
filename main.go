@@ -21,7 +21,7 @@ func RunAllRoutes() {
 	runAllRoutes(r)
 
 	// Запуск сервера
-	_ = r.Run("localhost: " + os.Getenv("PORT"))
+	_ = r.Run("localhost: " + "80")
 }
 
 func runAllRoutes(r *gin.Engine) {
