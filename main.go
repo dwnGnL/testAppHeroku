@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"os"
 )
 
 func main() {
@@ -20,7 +21,7 @@ func RunAllRoutes() {
 	runAllRoutes(r)
 
 	// Запуск сервера
-	_ = r.Run(":7987")
+	_ = r.Run(":"+os.Getenv("PORT"))
 }
 
 func runAllRoutes(r *gin.Engine) {
