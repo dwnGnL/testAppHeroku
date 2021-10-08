@@ -20,7 +20,7 @@ func RunAllRoutes() {
 	runAllRoutes(r)
 
 	// Запуск сервера
-	_ = r.Run("7987")
+	_ = r.Run(":7987")
 }
 
 func runAllRoutes(r *gin.Engine) {
